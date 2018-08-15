@@ -1,38 +1,3 @@
-# Nette Forms
-
-Some notes/code:
-```php
-$form->addText('name', 'Your name')->setRequired('Enter your name');
-$form->addRadioList('gender', 'Your gender', ['male', 'female']);
-$form->addCheckboxList('colors', 'Favorite colors', ['red', 'green', 'blue']);
-$form->addSelect('country', 'Country', ['Buranda', 'Qumran', 'Saint Georges Island']);
-$form->addCheckbox('send', 'Ship to address');
-$form->addGroup('Your account');
-$form->addPassword('password', 'Choose password');
-$form->addUpload('avatar', 'Picture');
-$form->addTextArea('note', 'Comment');
-```
-
-### https://my.interserver.net/nette/bootstrap3-rendering.php
-
-### https://github.com/nette/forms
-
-https://dev.nette.org/en/ajax
-
-https://dev.nette.org/en/quickstart/comments
-
-https://api.nette.org/2.4/namespace-Nette.Forms.html
-
-https://doc.nette.org/en/2.4/forms
-
-https://editor.nette.org/
-
-https://doc.nette.org/en/2.4/form-fields
-
-https://doc.nette.org/en/2.4/form-validation
-
-https://doc.nette.org/en/2.4/form-rendering
-
 # Forms
 
 Nette Forms greatly facilitates creating and processing web forms. What it can really do?
@@ -557,3 +522,42 @@ In order to add HTML content, you can use [Html](https://doc.nette.org/en/2.4/h
     use Nette\Utils\Html;$form->addText('phone', 'Phone:')    ->setOption('description', Html::el('p')        ->setHtml('This number remains hidden. <a href="...">Terms of service.</a>')    );
 
 Html element can be also used instead of label: `$form->addCheckbox('conditions', $label)`.
+
+
+
+
+### Sample Code
+
+```php
+$form->addText('name', 'Your name')->setRequired('Enter your name');
+$form->addRadioList('gender', 'Your gender', ['male', 'female']);
+$form->addCheckboxList('colors', 'Favorite colors', ['red', 'green', 'blue']);
+$form->addSelect('country', 'Country', ['Buranda', 'Qumran', 'Saint Georges Island']);
+$form->addCheckbox('send', 'Ship to address');
+$form->addGroup('Your account');
+$form->addPassword('password', 'Choose password');
+$form->addUpload('avatar', 'Picture');
+$form->addTextArea('note', 'Comment');
+```
+
+### Resources and Links
+
+https://my.interserver.net/nette/bootstrap3-rendering.php
+
+https://github.com/nette/forms
+
+https://dev.nette.org/en/ajax
+
+https://dev.nette.org/en/quickstart/comments
+
+https://api.nette.org/2.4/namespace-Nette.Forms.html
+
+https://doc.nette.org/en/2.4/forms
+
+https://editor.nette.org/
+
+https://doc.nette.org/en/2.4/form-fields
+
+https://doc.nette.org/en/2.4/form-validation
+
+https://doc.nette.org/en/2.4/form-rendering
