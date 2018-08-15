@@ -542,8 +542,6 @@ $form->addTextArea('note', 'Comment');
 
 ### Resources and Links
 
-https://my.interserver.net/nette/bootstrap3-rendering.php
-
 https://github.com/nette/forms
 
 https://dev.nette.org/en/ajax
